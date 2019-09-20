@@ -30,7 +30,7 @@ User.methods.hashPassword = function(password){
 }
 
 User.methods.comparePassword = function(password){
-	console.log('password--------',password , this.password , this.email)
+	
 
 		if(Bcrypt.compareSync(password, this.password)) {
 			return true;
